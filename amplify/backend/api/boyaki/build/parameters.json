@@ -1,0 +1,14 @@
+{
+    "CreateAPIKey": 0,
+    "AppSyncApiName": "boyaki",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authboyaki53d62f67",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "S3DeploymentBucket": "amplify-boyaki-dev-171652-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/7edc630f2f4fb00f6801c68c07079efb60beb245"
+}
